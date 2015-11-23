@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:background="#FFFFFF"
+                                               android:clickable="true">
+
+
+
+    <RelativeLayout
+        android:id="@+id/row_one_item_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:text="Create New User"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/row_two_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_one_item_one"
+        app:layout_heightPercent="2%" />
+
+
+    <ImageView
+        android:id="@+id/row_three_item_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_two_item_one"
+        android:layout_centerHorizontal="true"
+      android:src="@drawable/face"
+     android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="24%" />
+
+
+    <View
+        android:id="@+id/row_four_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_three_item_one"
+        app:layout_heightPercent="2%" />
+    <View
+        android:id="@+id/row_five_space"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_below="@+id/row_four_item_one"
+        app:layout_heightPercent="32%"
+        app:layout_widthPercent="3%"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/row_five_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="32%"
+        app:layout_widthPercent="94%"
+        android:background="@drawable/border_editboxes"
+        android:layout_below="@+id/row_four_item_one"
+        android:layout_toRightOf="@+id/row_five_space"
+        android:orientation="vertical"
+        android:weightSum="4"
+        >
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+    <ImageView
+        android:id="@+id/row_five_item_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+      android:layout_alignParentLeft="true"
+        android:src="@drawable/user"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="12%"
+
+       />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+android:layout_toRightOf="@id/row_five_item_one"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="88%"
+       />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+    <ImageView
+        android:id="@+id/row_six_item_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_five_item_one"
+        android:src="@drawable/mail"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="12%" />
+    <EditText
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_below="@+id/row_five_item_one"
+        android:layout_toRightOf="@id/row_six_item_one"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="88%"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+    <ImageView
+        android:id="@+id/row_seven_item_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_six_item_one"
+        android:src="@drawable/password"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="12%" />
+    <EditText
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_below="@+id/row_six_item_one"
+        android:layout_toRightOf="@id/row_seven_item_one"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="88%"/>
+        </android.support.percent.PercentRelativeLayout>
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+    <ImageView
+        android:id="@+id/row_eight_item_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_seven_item_one"
+        android:src="@drawable/password"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="12%" />
+    <EditText
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_below="@+id/row_seven_item_one"
+        android:layout_toRightOf="@id/row_eight_item_one"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="88%"/>
+        </android.support.percent.PercentRelativeLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/row_nine_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_five_space"
+        app:layout_heightPercent="1%" />
+    <View
+        android:id="@+id/row_ten_space"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_below="@+id/row_nine_item_one"
+        app:layout_heightPercent="4%"
+        app:layout_widthPercent="3%"
+        android:layout_alignParentLeft="true"
+
+        />
+    <ImageView
+        android:id="@+id/row_ten_item_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_nine_item_one"
+        android:layout_toRightOf="@+id/row_ten_space"
+        android:src="@drawable/agree"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="4%"
+        app:layout_widthPercent="9%" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click for user agreement."
+        android:layout_below="@+id/row_nine_item_one"
+        android:layout_toRightOf="@+id/row_ten_item_one"
+        android:layout_alignBottom="@+id/row_ten_item_one"
+        android:layout_marginLeft="15dp"
+
+        />
+    <View
+        android:id="@+id/row_eleven_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_ten_space"
+        app:layout_heightPercent="1%" />
+
+    <View
+        android:id="@+id/row_twelve_space"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_below="@+id/row_eleven_item_one"
+        app:layout_heightPercent="4%"
+        app:layout_widthPercent="3%"
+        android:layout_alignParentLeft="true"
+
+        />
+    <ImageView
+        android:id="@+id/row_twelve_item_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_eleven_item_one"
+        android:layout_toRightOf="@+id/row_twelve_space"
+        android:src="@drawable/ok"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        app:layout_heightPercent="4%"
+        app:layout_widthPercent="9%" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me after login."
+        android:layout_below="@+id/row_eleven_item_one"
+        android:layout_toRightOf="@+id/row_twelve_item_one"
+        android:layout_alignBottom="@+id/row_twelve_item_one"
+        android:layout_marginLeft="15dp"
+
+        />
+
+    <View
+        android:id="@+id/row_thirteen_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/row_twelve_space"
+        app:layout_heightPercent="1%" />
+    <View
+        android:id="@+id/row_fourteen_space"
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:layout_below="@+id/row_thirteen_item_one"
+        app:layout_heightPercent="4%"
+        app:layout_widthPercent="3%"
+        android:layout_alignParentLeft="true"
+
+        />
+    <Button
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="94%"
+        android:text="Save!"
+        android:layout_below="@+id/row_thirteen_item_one"
+        android:layout_toRightOf="@+id/row_fourteen_space"
+        />
+
+    </android.support.percent.PercentRelativeLayout>
